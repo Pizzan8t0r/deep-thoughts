@@ -44,10 +44,12 @@ GraphQL isn't tied to a specific language. Instead, it is its own language speci
 When this new wave of modern applications with dynamic data updating and retrieval emerged, sticking to the ideal RESTful API structure became increasingly cumbersome to work with for a number of reasons. The main reason is that RESTful API endpoints serve either too much or too little data. Because these endpoints may serve too little data, multiple requests would have to be made one after another to retrieve all of that data.
 
 Creating a GraphQL API isn't much different than building a REST API with Express.js routes and controllers. Instead of creating a bunch of endpoints to handle all of the different types of requests, we consolidate them into one endpoint and provide more detailed information as to what the API is going to do for us.
+
 ![Screenshot 2023-05-29 at 18 26 35 (2)](https://github.com/Pizzan8t0r/deep-thoughts/assets/131811220/95aad7b6-43aa-418e-b0b8-b27cd53e5106)
 
 ##  
 We integrated a Node.js-specific GraphQL library called Apollo Server to query all of data from our database using a single API endpoint. This allows us to query multiple resources of data with a single HTTP request and test our API using a built-in tool called Apollo Studio Explorer
+
 <img width="1441" alt="700-me-with-form" src="https://github.com/Pizzan8t0r/deep-thoughts/assets/131811220/58ff8547-94ac-4493-b305-72e95badf2fe">
 
 * Integrated the Apollo Server GraphQL library to handle data requests to our API.
