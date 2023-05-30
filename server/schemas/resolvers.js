@@ -3,14 +3,19 @@ const { User, Thought } = require('../models');
 
 const resolvers = {
     Query: {
-      thoughts: async () => {
-        return Thought.find().sort({ createdAt: -1 });
-        // place this inside of the `Query` nested object right after `thoughts`
-      }
-    }
+        me: async (parent, args) => {
+          const userData = await User.findOne({})
+            .select('-__v -password')
+            .populate('thoughts')
+            .populate('friends');
+      
+          return userData;
+        },
+        // other queries remain the same
+      },
     thought: async (parent, { _id }) => {
         return Thought.findOne({ _id });
-      }
+      },
       Mutation: {
         addUser: async (parent, args) => {
             const user = await User.create(args);
@@ -34,7 +39,7 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
           }
-          }
+          },
     // get all users
 users: async () => {
     return User.find()
