@@ -10,7 +10,11 @@ const resolvers = {
     thought: async (parent, { _id }) => {
         return Thought.findOne({ _id });
       }
-            
+      Mutation: {
+        addUser: async () => {
+    
+        },
+        login: async () => {    
     // get all users
 users: async () => {
     return User.find()
