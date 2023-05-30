@@ -21,9 +21,7 @@ When the REST API design pattern emerged, developers quickly adopted it because 
 With REST APIs, we implement CRUD actions through the HTTP verbs GET, POST, PUT, and DELETE. With GraphQL, however, we split these four actions into the following two categories:
 * Queries: Queries are how we perform GET requests and ask for data from a GraphQL API.
 * Mutations: Mutations are how we perform POST, PUT, and DELETE requests to create or manipulate data through a GraphQL API.
-
-
-
+<img width="1399" alt="deepthoughts layout" src="https://github.com/Pizzan8t0r/deep-thoughts/assets/131811220/168ba5e1-4f86-45b8-9d3f-c50bf0307df1">
 
 ###  GraphQL: 
 GraphQL, is used as an alternative to RESTful API design patterns:
@@ -35,6 +33,7 @@ GraphQL isn't tied to a specific language. Instead, it is its own language speci
 When this new wave of modern applications with dynamic data updating and retrieval emerged, sticking to the ideal RESTful API structure became increasingly cumbersome to work with for a number of reasons. The main reason is that RESTful API endpoints serve either too much or too little data. Because these endpoints may serve too little data, multiple requests would have to be made one after another to retrieve all of that data.
 
 Creating a GraphQL API isn't much different than building a REST API with Express.js routes and controllers. Instead of creating a bunch of endpoints to handle all of the different types of requests, we consolidate them into one endpoint and provide more detailed information as to what the API is going to do for us.
+![Screenshot 2023-05-29 at 18 26 35 (2)](https://github.com/Pizzan8t0r/deep-thoughts/assets/131811220/95aad7b6-43aa-418e-b0b8-b27cd53e5106)
 
 ##  
 We integrated a Node.js-specific GraphQL library called Apollo Server to query all of data from our database using a single API endpoint. This allows us to query multiple resources of data with a single HTTP request and test our API using a built-in tool called Apollo Studio Explorer
