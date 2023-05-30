@@ -9,6 +9,8 @@ const userSchema = new Schema(
       unique: true,
       trim: true
     },
+    // The match option is a type of validation that allows us to use regex to test the input value.
+    // we are using a regex pattern to test if the data being entered to the email field is in fact a valid email address that follows the pattern <string>@<string>.<string>. If it doesn't, we send back a custom error message stating that there must be a valid email address.
     email: {
       type: String,
       required: true,
