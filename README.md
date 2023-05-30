@@ -50,4 +50,4 @@ We integrated a Node.js-specific GraphQL library called Apollo Server to query a
 * Built both query type definitions and resolvers for retrieving data from our MongoDB database.
 * Used the Apollo Studio Explorer interface to thoroughly test our GraphQL queries.
 #### Deployment: 
-
+https://arcane-earth-17619.herokuapp.com/ 
