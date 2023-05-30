@@ -16,6 +16,10 @@ Objectives:
 * Implement a front-end authentication service to help manage a user’s logged-in status.
 * Updated the header to have user-based navigation.
 * Set up queries to display the logged-in user’s data on pages.
+* Use React Router to tie a component to a URL route.
+* Use URL parameters with React Router.
+* Add variables to a useQuery Hook.
+
 
 
 ###  Brief: 
