@@ -9,7 +9,14 @@ The ultimate goal of our application is to make a social media app with the foll
 * A user can sign up and log in to the application.
 * A user can post their thoughts and view other user's thoughts.
 * A user can react, or reply, to a thought.
-* A user can befriend other users.
+* A user can befriend other users. 
+* Set up front-end functionality to create and log in a user using mutations.
+
+Objectives:
+* Implement a front-end authentication service to help manage a user’s logged-in status.
+* Updated the header to have user-based navigation.
+* Set up queries to display the logged-in user’s data on pages.
+
 
 ###  Brief: 
 Modern social media applications work with tons of data, most of the time on a single page. Since a lot of this data doesn't come from a single resource or endpoint, performing CRUD operations through an API built with RESTful design patterns involves hundreds, if not thousands, of HTTP requests from the client to the server in a short amount of time.
@@ -37,6 +44,7 @@ Creating a GraphQL API isn't much different than building a REST API with Expres
 
 ##  
 We integrated a Node.js-specific GraphQL library called Apollo Server to query all of data from our database using a single API endpoint. This allows us to query multiple resources of data with a single HTTP request and test our API using a built-in tool called Apollo Studio Explorer
+<img width="1441" alt="700-me-with-form" src="https://github.com/Pizzan8t0r/deep-thoughts/assets/131811220/58ff8547-94ac-4493-b305-72e95badf2fe">
 
 * Integrated the Apollo Server GraphQL library to handle data requests to our API.
 * Built both query type definitions and resolvers for retrieving data from our MongoDB database.
